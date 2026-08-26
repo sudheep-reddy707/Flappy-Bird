@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Step</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f1016; color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .container {
+            background: #1a1c23;
+            padding: 40px;
+            border-radius: 16px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        /* Colorful Gradient Border Effect */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -4px; bottom: -4px; left: -4px; right: -4px;
+            background: linear-gradient(45deg, #ff007f, #7928ca, #ffb800, #00dfd8);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 15px; 
+            background: linear-gradient(45deg, #ff007f, #00dfd8); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        p { color: #a0aec0; margin-bottom: 25px; line-height: 1.6; }
+        .btn { 
+            display: inline-block; 
+            padding: 12px 30px; 
+            background: linear-gradient(45deg, #7928ca, #ff007f); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 30px; 
+            font-weight: bold; 
+            transition: opacity 0.3s; 
+        }
+        .btn:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Urban Step</h1>
+        <p>Redefining street culture, one step at a time. Discover our upcoming collection of bold footwear designed for the modern trailblazer.</p>
+        <a href="#shop" class="btn">Explore Collection</a>
+    </div>
+</body>
+</html>
